@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<title>FreeStyleMusic</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<!-------------リンクの読み込みStr------------------------------->
+<!-- stylesheets 独自cssの読み込み -->
+<link rel="stylesheet" href="css/base.css" media="all">
+<link rel="stylesheet" href="css/intro.css" media="all">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--スライドショー-->
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<!--メインビジュアルをい浮かせる-->
+<!-------------javascript本体読み込み------------------------------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<header id="header" class="header">
+  <div class="container">
+   <div id="naviBox">
+    <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+       <ul>
+　　　　 <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>ホーム</a></li>
+         <li><a href="intro.html"><i class="fa fa-building-o" aria-hidden="true"></i>学校紹介</a></li>
+         <li><a href="course.html"><i class="fa fa-book" aria-hidden="true"> </i>コース・楽器</a></li>
+         <li><a href="#"><i class="fa fa-music" aria-hidden="true"></i>入学案内</a></li>
+       </ul>ハンバーガー！<br>理解ざっくり回数こなしてね
+      </div>
+    </div><!--naviBox-->
+   </div><!--nav-drawer-->
+   <div id="info-area">
+    <div class="op5"><h1 class="header-logo"><a href="index.html"><img src="img/logo.png" alt="音楽学校FreeSty♪eMusic"></a></h1></div>
+     <div id="header-info" class="tab">
+      <ul>
+       <li><a href="#">よくある質問</a></li>
+       <li><a href="#">ログイン</a></li>
+       <li><p><a href="#"><b>03-3341-XXXX</b></a>
+         <ul><li><small>【受付時間】9:00～21:00<br>&nbsp;&nbsp;月～金（日・祝日を除く）</small></li></ul></p></li>
+      </ul>
+      <p id="free-try"><strong><a href="#">無料体験</a></strong></p>
+     </div><!-- #header-info -->
+    </div><!-- .op5 -->
+   </div><!-- #info-area -->
+</header><!-- /#header -->
+<nav id="gnav" class="gnav">
+ <div class="container ">
+  <div class="tab">
+   <ul class="gnav-ul fixed tab">
+    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>ホーム</a></li>
+    <li><a href="intro.html"><i class="fa fa-building-o" aria-hidden="true"></i>学校紹介</a>
+     <ul class="sub-gnav">
+      <li ><a href="intro.html#points">学習環境</a></li>
+      <li><a href="intro.html#points">ポイント制システム</a></li>
+      <li><a href="intro.html#points">セッションライブ活動</a></li>
+      <li><a href="intro.html#msg">メッセージ</a></li>
+      <li><a href="intro.html#msg">スタッフ</a></li>
+      <li><a href="intro.html#msg">卒業生の活躍</a></li>
+     </ul><!-- /.sub-gnav -->
+    </li>
+    <li><a href="course.html"><i class="fa fa-book" aria-hidden="true"> </i>コース・楽器</a>
+     <ul class="sub-gnav">
+      <li><a href="course.html#guitar">ギター</a></li>
+      <li><a href="course.html#bass">ベース</a></li>
+      <li><a href="course.html#piano">ピアノ</a></li>
+      <li><a href="course.html#drum">ドラム</a></li>
+      <li><a href="course.html#vocal">ボーカル</a></li>
+      <li><a href="course.html#edit-arrangement">編集・編曲</a></li>
+      <li><a href="course.html#code">コード進行</a></li>
+      <li><a href="course.html#logic-1">理論基礎</a></li>
+      <li><a href="course.html#logic-2">理論応用</a></li>
+      <li><a href="course.html#option">オプション</a></li>
+     </ul><!-- /.sub-gnav -->
+    </li>
+    <li><a href="#"><i class="fa fa-music" aria-hidden="true"></i>入学案内</a>
+     <ul class="sub-gnav">
+      <li><a href="#">入学までの流れ</a></li>
+      <li><a href="#">学費</a></li>
+      <li><a href="#">分納/ローン/奨学金</a></li>
+     </ul><!-- /.sub-gnav -->
+    </li>
+   </ul><!-- /.gnav-ul fixed tab -->
+  </div><!-- .tab -->
+ </div><!-- .container -->
+</nav><!-- /#gnav -->
+<main id="contents" class="contents">
+ <div class="container">
+<!--*****************************************************************-->
+<!--**********************mainContainer・中央寄せStr*****************-->
+<!--*****************************************************************-->
+  <div id="main-Photo"><img src="img/main2.png" alt="音楽×人×自由　新スタイルの学び方で通う音楽スクール、自由選択性・楽器・機材環境の充実した社会人の要望に特化したスクール"/></div>
+  <div id="notice">
+   <ul class="slider"><!--<ul class="pc-grid-col3">-->
+    <li class="col"><a href="#"><img src="img/sub_liveInfo.jpg" alt="最新ライブ情報　卒業生、講師、在校生参加受付中！"/></a></li>
+    <li class="col"><a href="#"><img src="img/sub_freeTrial.jpg" alt="授業担当講師がお出迎えします！！楽器を触りに行こう！"/></a></li>
+    <li class="col"><a href="#"><img src="img/sub_interview.jpg" alt="受講生インタビュー　受講頻度　環境　入学理由"/></a></li>
+   </ul><!-- /pc-grid-col3 .slider -->
+  </div><!-- /#notice -->
+ 
+  <!--*****************************************************************-->
+ 
+  <div class="pc-grid-col2">
+   <section id="info" class="col-6 section clearfix">
+    <h2 class="heading"><i class="fa fa-music" aria-hidden="true"></i>&nbsp;News </h2>
+     <dl class="info-list">
+       <dt>2020-02-02</dt>
+       <dd><a href="#">ウインター特別セミナー受付中！</a></dd>
+       <dt>2020-01-30</dt>
+       <dd><a href="#">特別講師としてXXXさんが登場！</a></dd>
+       <dt>2020-01-29</dt>
+       <dd><a href="#">オープンキャンパスのご案内</a></dd>
+       <dt>2020-01-17</dt>
+       <dd><a href="#">FreeStyl♪eMusicアプリケーション開始</a></dd>
+      </dl><a href="#" class="more">News一覧</a>
+    </section><!-- /#info -->
+ 
+<!--*****************************************************************-->
+ 
+ 
+   <section id="open-campus" class="col-4 open-campus section">  
+ 　 <div class="event-explain">
+      <p class="school"><b>FreeStyleMusic</b></p>
+      <p><strong>入退場・見学自由</strong></p>
+      <p><b>オープンキャンパス</b></p>
+      <p><b>2020-XX-XX～2020-XX-XX</b></p>
+     </div><!--/.event-explain-->
+     <a href="index.html" class="a-cover"></a>
+    </section><!-- /#open-campus-->
+  </div><!-- /.pc-grid-col2-->
+ 
+<!--*****************************************************************-->
+ 
+  <section id="popular-course" class="section">
+   <h2 class="heading"><i class="fa fa-music" aria-hidden="true"></i>&nbsp;人気コース</h2>
+    <ul class="pc-grid-col3 menu-list">
+     <li class="col"><a href="#"><img src="img/course_guitar.png" alt="ギター専攻"></a></li>
+     <li class="col"><a href="#"><img src="img/course_bass.png" alt="ベース専攻"></a></li>
+     <li class="col" id="a"><a href="#"><img src="img/course_piano.png" alt="ピアノ専攻"></a></li>
+     <li class="col"><a href="#"><img src="img/course_drum.png" alt="ドラム専攻"></a></li>
+     <li class="col"><a href="#"><img src="img/course_vocal.png" alt="ボーカル専攻"></a></li>
+     <li class="col"><a href="#"><img src="img/course_edit_arrangement.png" alt="編集・編曲専攻"></a></li>
+    </ul><!-- /.pc-grid-col3 .menu-list-->
+    <p><a href="#" class="more">一覧を見る</a></p>
+  </section><!-- /.popular-course -->
+ 
+<!--*****************************************************************-->
+  <section id="introduce" class="section">
+   <h2><i class="fa fa-music" aria-hidden="true"></i>&nbsp;学校紹介</h2><a href="#"><img class="section" src="img/school_introduce.png" alt="学校紹介"/></a>
+   <ul class="mt10">
+    <li class="clearfix">
+     <h3>学習環境</h3>
+     <p>学校での対面型授業と別に自宅でも学習できる<strong>オンデマンド学習</strong>を採用しております。<br>学校では少人数専授業・オンデマンド・自習室をもうけております。そして学校では<strong>楽器レンタルも可能です。</strong>お試しで新しい楽器にチャレンジください。既にお持ちの方向けには、<strong>楽器の持ち込み可能
+     </strong>な<strong>専用ロッカー</strong>がございます。（日置の可）
+     <br>本校の設備は実際の現場で使用されている機材を使用しております。授業はプロ講師が在中しており<strong>本格的に学びたい方</strong>も必見です</p>
+     <a href="#" class="more mb5">もっと見る</a>
+    </li>
+    <li class="clearfix">
+     <h3>ポイント制システム</h3>
+     <p>料金・楽器レンタル・コース組み合わせ全て<strong>ポイントで一括管理！</strong>個人に合わせた学習を提供!!</p>
+     <a href="#" class="more mb5">もっと見る</a>
+    </li>
+    <li class="clearfix">
+     <h3>セッションからライブ活動まで</h3>
+     <p>少人数授業では毎時間簡単な<strong>セッション</strong>がございます。大変好評で人気授業となっております！その場限りの音楽を是非私たちと一緒に楽しみましょう。
+     <br>また課外活動として<strong>定期的なライブ活動</strong>も随時開催、<a href="#" id="reserve">予約受付中</a>ですので是非ご参加ください！</p>
+     <a href="#" class="more mb5">もっと見る</a> 
+    </li>
+   </ul>
+  </section><!-- /#introduce -->
+ 
+<!--*****************************************************************-->
+ 
+  <section id="goal" class="section">
+   <h2 class="heading"><i class="fa fa-music" aria-hidden="true"></i>&nbsp;目指す形はそれぞれ</h2>
+    <ul class="pc-grid-col3 each-goal section">
+     <li class="col"><a href="#"><img class="fadein" src="img/goal_pro.png" alt="本格的な技術を学びたい充実した機材設備"/></a></li>
+     <li class="col"><a href="#"><img class="fadein" src="img/goal_together.png" alt="少人数授業"/></a></li>
+     <li class="col"><a href="#"><img class="fadein" src="img/goal_live.png" alt="ライブ裏も表も楽しめる新感覚"/></a></li>
+    </ul>
+  </section><!-- /#goal -->
+ 
+<!--*****************************************************************-->
+ 
+  <div class="pc-grid-col2"> 
+   <section id="msg" class="section col">
+     <h2 class="heading"><i class="fa fa-music" aria-hidden="true"></i>&nbsp;FreeStylMusicの想い</h2>
+     <p class="mt10">音楽を通じて多くの人を幸せに。<br>人々をつなげる居場所に。<br>私たちとの出会いが素敵な音楽ライフ<br>へとつながりますように。
+     <img src="img/baby.jpg" alt="赤ちゃん"/></p>
+   </section><!-- /#msg -->
+   <aside id="banner" class="section col">
+ 　 <ul class="banner-list">
+     <li><a href="#"><img src="img/bnr_app.jpg" alt=""></a></li>
+     <li class="mt20"><a href="#"><img src="img/bnr_mix_course.png" alt=""></a></li>
+    </ul>
+   </aside><!-- /#banner -->
+  </div><!-- /.pc-grid-col2 -->
+ 
+<!--*****************************************************************-->
+ 
+  <div id="apply"><a href="#">無料体験レッスンを申し込む</a></div>
+ 
+<!--*****************************************************************-->
+  <div class="section">
+   <p id="sns">公式アカウント</p>
+   <ul class="sns">
+    <li class="twitter"><a href="#"><i class="fa fa-twitter-square fa-5x" aria-hidden="true"></i></a></li>
+    <li class="facebook"><a href="#"><i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a></li>
+   </ul>
+  </div><!-- /.section -->
+ 
+<!--*****************************************************************-->
+ 
+  <section id="access" class="section">
+   <h2 class="heading">Access</h2>
+   <div class="map containe">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3241.177172339873!2d139.72505595!3d35.672639249999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5p2x5Lqs6YO95riv5Yy66Z2S5bGxMS0x!5e0!3m2!1sja!2sjp!4v1439816808418" width="940"height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+   </div><!-- /.map -->
+   <div class="add">
+    <p class="mt20 address">〒151-XXXX　東京都渋谷区XXXXXXXXX</p>
+    <ul class="mt2">
+     <li><b>JR新宿駅</b>から<b>徒歩10分</b></li>
+     <li><b>JR代々木駅</b>から<b>徒歩3分</b></li>
+    </ul>
+    <p><a href="tel:03-0000-0000" class="btn-tel">03-3341-XXXX</a></p>
+   </div><!-- /.add-->
+  </section><!-- /#access -->
+ 
+<!--*****************************************************************-->
+<!--**********************mainContainer・中央寄せEnd*****************-->
+<!--*****************************************************************-->
+ </div><!-- /.container -->
+</main><!-- /#main -->
+<footer id="footer" class="footer">
+ <div class="container footer-op">
+  <section class="footer-info">
+   <div class="footer-logo"><a href="index.html"><img class="mt20"src="img/logo.png" alt="音楽学校FreeStyleMusic"></a></div>
+    <div class="footer-info-data container tab">
+    <dl>
+     <dt>【受付時間】</dt>
+     <dd>9:00～21:00月～金（日・祝日を除く）</dd>
+    </dl>
+    <p><a href="form.html">【お問い合わせはこちら】</a></p>
+    <ul id="request" class="mt20s">
+     <li><a href="form.html">お問い合わせ/各種窓口</a></li>  
+     <li>このサイトについて</li>
+     <li>プライバシーポリシー</li>
+     <li>サイトマップ</li>
+    </ul>
+   </div><!-- /.footer-info-data container tab -->
+   <p class="copyright"><small>Copyrights (c) FreeStyleMusic All Rights Reserved.</small></p>
+  </section><!-- /#footer-info -->
+  <p class="pagetop"><a href="#header">TOP</a></p>
+	</div>
+</footer><!-- /#footer -->
+<!--*****************************************************************-->
+<!--**********************javascript*****************-->
+<!--*****************************************************************-->
+<!---メインビジュアル----->
+<script type="text/javascript">
+$(function(){
+    var setImg = '#main-Photo';
+    var fadeSpeed = 1600;
+    var switchDelay = 5000;
+    $(setImg).children('img').css({opacity:'0'});
+    $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+});
+</script>
+
+<!---学校紹介ふわっと登場----->
+<script type="text/javascript">$(function(){
+ $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 200){
+                $(this).css('opacity','1');
+                $(this).css('transform','translateY(0)');
+            }
+        });
+    });
+});</script>
+<!---サブ写真スライドショー----->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+ $(function(){
+  $('.slider').slick({
+    autoplay: true,//自動再生
+    autoplaySpeed: 1500,//次にスライドするまでの時間
+    infinite:true,
+    speed: 600,//動く速さ
+    centerMode: true,
+    centerPadding: '30%',
+    dots:true,
+    arrows:true,
+    dots:true,
+    responsive: [
+   {
+         breakpoint: 480,     
+         settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+        }
+       }
+    ],
+  });
+}); 
+</script>
+<!--降らすアニメーション-->
+<script type="text/javascript" src="js/snowfall.jquery.js"></script>
+<script type="text/javascript">
+$(function() {
+  $('header').snowfall({
+    minSize  : 4,    // 雪の最小サイズ
+    maxSize  : 20,    // 雪の最大サイズ
+    minSpeed : 1,    // 雪の最低速度
+    maxSpeed : 3,    // 雪の最高速度
+    round    : true, // 雪の形を丸くする
+    shadow   : true, // 雪に影をつける
+    flakeColor : "#ecf6f9",// 雪の色を指定
+    image : "img/opm.png",
+    flakeIndex : "888",
+  });
+});
+</script>
+</body>
+</html>

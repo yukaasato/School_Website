@@ -1,0 +1,14 @@
+@c0harset "utf-8";
+#form-area{
+  width:50%;
+  margin: 0 auto;
+  text-align:left;
+  padding:50px;
+  margin-top:50px;
+  margin-bottom:50px;
+  color:#333;
+  border:10px solid lightblue;
+  border-radius:20px;
+}
+
+
